@@ -1,6 +1,6 @@
 import { fastify } from 'fastify'
 // import { DatabaseMemory } from './database-memory'
-import { DatabasePostgres } from './database-postgres'
+import { DatabasePostgres } from './database-postgres.js'
 
 const server = fastify()
 
