@@ -48,8 +48,6 @@ server.put('/videos/:id', async (request, reply) => {
 server.delete('/videos/:id', async (request, reply) => {
   const videoId = request.params.id
 
-  console.log(videoId)
-
   await database.delete(videoId)
 
   return reply.status(204).send()
